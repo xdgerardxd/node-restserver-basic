@@ -1,0 +1,45 @@
+********** REST SERVER - Node.JS y Express.JS **********
+
+/// ***** Instalacion de recursos ***** \\\
+
+1) Programa POSTMAN para realizar peticiones a nuestras rutas o apis creadas: https://www.postman.com/
+2) Base de datos MongoDB
+3) Node.js y Express.js
+
+/// ***** Instalacion de MongoDB ***** \\\
+***** Instalacion - configuracion y paginas *****
+1) Se utilizara MongoDB como base de datos: www.mongodb.com
+4) Documentacion MongoDB: https://docs.mongodb.com/
+5) Instrucciones de instalacion: https://docs.mongodb.com/manual/installation/
+6) Instalar el manejador de base de datos Robo3T: 
+6.1- Descarga: https://download.studio3t.com/robomongo/windows/robo3t-1.4.2-windows-x86_64-8650949.exe
+6.2- Pagina web: https://robomongo.org/download
+7) Realizar la conexion mediante el manejador y crear la base de datos y colecciones.
+8) Comandos windows:
+a- Conocer version: * mongod -v
+b- iniciar:         * mongo.exe o mongod
+
+***** DB - Colecciones *****
+1) Click derecho a la conexion - Crear Base de datos.
+2) Crear colecciones 
+3) Al crear o insertar un registro mongo crea un campo _id automaticamente
+3.1- Este contiene informacion de la fecha,hora,maquina y un codigo unico para el registro
+
+/// ***** Iniciando el proyecto ***** \\\
+1) Crear nueva carpeta
+2) Inicializar proyecto: * npm init 
+3) Instalar express:     * npm install express --save 
+3.1-Documentacion:https://expressjs.com/es/4x/api.html
+4) Crear una nueva carpeta llamada server y dentro un nuevo archivo server.JS (Existen varias maneras)
+5) Crear las rutas e importar las librerias
+
+7) Instalar libreria bodyparser para recibir informacion en las peticiones post y 
+serializarla en un objeto json automaticamente
+* npm install body-parser Documentacion: https://www.npmjs.com/package/body-parser
+
+***** Configuracion global *****
+
+1) Entornos de produccion y desarrollo: Crear archivo para direccionar los ambientes.
+2) Crear una carpeta llamada config dentro de la carpeta server y un archivo config.js el cual
+contendra todos nuestro parametros de configuracion de forma global (Ej: process)
+
